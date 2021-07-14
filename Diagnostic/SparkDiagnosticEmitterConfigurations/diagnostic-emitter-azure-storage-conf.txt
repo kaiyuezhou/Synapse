@@ -1,0 +1,7 @@
+spark.synapse.diagnostic.emitters MyDestination1
+spark.synapse.diagnostic.emitter.MyDestination1.type AzureStorage
+spark.synapse.diagnostic.emitter.MyDestination1.categories Log,EventLog,Metrics
+spark.synapse.diagnostic.emitter.MyDestination1.uri https://<my-blob-storage>.blob.core.windows.net/<container-name>/<folder-name>
+spark.synapse.diagnostic.emitter.MyDestination1.auth <AccessKey-or-SAS>
+spark.synapse.diagnostic.emitter.MyDestination1.secret.keyVault <key-vault-name>
+spark.synapse.diagnostic.emitter.MyDestination1.secret.keyVault.secretName <key-vault-secret-name>
